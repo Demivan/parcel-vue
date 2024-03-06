@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import type { ExternalProps } from './types';
-
-defineProps<ExternalProps>();
+let x: string | number = 1
 </script>
 
 <template>
-  <div>
-    <h1>{{ externalProp }}</h1>
-  </div>
+  {{ (x as number).toFixed(2) }}
 </template>
